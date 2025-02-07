@@ -94,7 +94,7 @@ for model_name, model in models.items():
     print(f"Model {model_name} training completed.")
 
     y_pred_proba = model.predict_proba(X_test)[:, 1]
-    y_pred = (y_pred_proba >= 0.6).astype(int)
+    y_pred = (y_pred_proba >= 0.8).astype(int)
 
     report = classification_report(y_test, y_pred, output_dict=True)
     accuracy = accuracy_score(y_test, y_pred)
