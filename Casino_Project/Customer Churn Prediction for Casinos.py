@@ -79,7 +79,7 @@ X_test = X_test[X_train.columns]  # Remove the same features from the test set
 models = {
     "RandomForest": RandomForestClassifier(n_estimators=150, max_depth=10, min_samples_split=5, class_weight='balanced',
                                            random_state=42, n_jobs=-1),
-    "XGBoost": xgb.XGBClassifier(n_estimators=150, max_depth=6, reg_lambda=1.5, reg_alpha=0.5, use_label_encoder=False,
+    "XGBoost": xgb.XGBClassifier(n_estimators=150, max_depth=6, reg_lambda=1.5, reg_alpha=0.5,
                                  eval_metric='logloss', verbosity=1),
     "LightGBM": lgb.LGBMClassifier(n_estimators=150, max_depth=6, lambda_l1=1.0, lambda_l2=1.0, verbose=1),
     "CatBoost": cb.CatBoostClassifier(n_estimators=150, depth=6, l2_leaf_reg=1.5, verbose=1,
