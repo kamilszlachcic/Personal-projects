@@ -1,0 +1,38 @@
+# ------------------------
+# IDE
+# ------------------------
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.env
+.venv/
+.idea/
+.vscode/
+
+# ------------------------
+# Jupyter Notebooks cache
+# ------------------------
+**/.ipynb_checkpoints/
+
+# ------------------------
+# Folders
+# ------------------------
+Kaggle\ Submission/
+
+# ------------------------
+# Data
+# ------------------------
+data/raw/*.csv
+data/processed/*.pkl
+
+# ------------------------
+# Models
+# ------------------------
+src/models/*.pkl
+src/models/*.pth
+src/models/*.txt
+src/models/*scaler*
