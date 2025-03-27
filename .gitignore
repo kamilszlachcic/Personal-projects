@@ -36,3 +36,4 @@ src/models/*.pkl
 src/models/*.pth
 src/models/*.txt
 src/models/*scaler*
+/Brain Tumor Segmentation for MRI/data/
